@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <fieldset>
+        <legend>student user information</legend>
+        <form id="formcontainer">
+        <label for="name">name</label>
+        <input type="text" name="name" id="name" required placeholder="enter your name"> <br> <br>
+
+        <label for="dob">date of birth</label> 
+        <input type="date" name="dob" id="dob" zrequired min="2018-05-05" max="2024-05-31"><br> <br>
+
+        <label for="gender">gender</label>
+        <select name="gender" id="gender">
+        <option value="">select one options</option>
+        <option value="male">male</option>
+        <option value="female">female</option>
+        <option value="others">others</option></select><br> <br>
+
+        <label for="marks">marks</label>
+        <input type="number" name="marks" id="marks" required placeholder="enter your marks"><br> <br>
+
+        <input type="submit"/>
+    </form>
+    </fieldset>
+
+    <div id="resultcontainer">
+         <h2>user information</h2>
+    </div>
+
+    <script>
+        document
+        .getElementById("formcontainer")
+        .addEventListener("submit",(event) => {
+         event.preventDefault();
+
+         const name = document.getElementById("name").value;
+         const dob = document.getElementById("dob").value;
+         const gender = document.getElementById("gender").value;
+         const marks = document.getElementById("marks").value;
+
+         const resultcontainer = document.getElementById("resultcontainer");
+
+         resultcontainer.innerHTML = 
+       `  <h2>user information</h2>
+         <p><strong>name:</strong> ${name}</p>
+         <p><strong> date of bitrh</strong> ${dob}</p>
+         <p><strong>gender</strong> ${gender}</p>
+         <p><strong>marks</strong> ${marks}</p>;`
+        });
+    </script>
+     
+</body>
+</html>

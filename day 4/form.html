@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <!-- form in html -->
+    <!-- form is to collect the date form the user-->
+      <fieldset>
+        <legend> user information</legend>
+      <form action="">
+        <label for="fname">firstname:</label>
+        <input type="text" name="firstname"  id="fname" placeholder=" enter your name" required autocomplete="off"/> <br> <br>
+        <label for="phone">phone:</label>
+        <input type="tel" name="mobilenumber" id="phone" placeholder="enter your phone number"/>  <br> <br>
+        <label for="password">password:</label>
+        <input type="password" name="password" id="password" placeholder="enter your password"/>  <br> <br>
+        <label for="email">email:</label>
+        <input type="email" name="email" id="email" placeholder="enter your email"/> <br> <br>
+        <label for="addrees">addrees:</label>
+        <textarea name="addrees" id="addrees" placeholder="enter your addrees"></textarea><br> <br>
+
+         <!-- radio and checkbox -->
+         <!-- in html ,radio button is to select only one option but charater is to select one or multiple options -->
+
+         <label for="gender">gender:</label>
+         <input type="radio" name="gender" id="gender" value="male"/>male
+         <input type="radio" name="gender" id="gender" value="female"/>female
+         <input type="radio" name="gender" id="gender" value="non-binary"/>non=binary <br> <br>
+         
+         <label for="languages">languages:</label>
+         <input type="checkbox" name="language1" id="languages" value="english"/>english
+         <input type="checkbox" name="language2" id="languages" value="telugu"/>telugu
+         <input type="checkbox" name="language3" id="languages" value="hindi"/>hindi
+         <input type="checkbox" name="language4" id="languages" value="tamil"/>tamil <br> <br>
+
+        <label for="pet select"> choose a pet</label><br> <br>
+        <select name="pets" id="pet select">
+        <option value="">--please choose an option</option><br><br>
+        <option value="dog">dog</option><br><br>
+        <option value="cat">cat</option><br><br>
+        <option value="lion">lion</option><br><br>
+        <option value="tiger">tiger</option><br> <br>
+
+    </select>
+    <label for="avatar"> choose a profile picture</label><br> <br>
+    <input type="file" id="avatar" name="avatar" accept="image/png ,image/jpg"/> <br> <br>
+    <input type="submit" value="sumbit">
+    <input type="reset" value="reset">
+
+        </form>
+    </fieldset>
+</body>
+</html>
